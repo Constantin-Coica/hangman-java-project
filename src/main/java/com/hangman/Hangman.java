@@ -21,7 +21,7 @@ public class Hangman {
         display.displayStartMessage(INITIAL_LIVES);
         setCurrentLives(INITIAL_LIVES);
         this.wordToGuess = WordManagement.getRandomWord();
-        System.out.println(wordToGuess);
+        //System.out.println(wordToGuess); <- UNCOMMENT THIS FOR DEBUGGING PURPOSES
         addUnderScores(this.wordToGuess);
         display.displayWordToGuess(currentWord);
         display.displayLettersGuessed(lettersGuessed);
@@ -110,11 +110,11 @@ public class Hangman {
         this.currentLives = currentLives;
     }
 
-    public String getStatus() {
+    private String getStatus() {
         return status;
     }
 
-    public void setStatus(String status) {
+    private void setStatus(String status) {
         this.status = status;
     }
 }

@@ -11,7 +11,7 @@ class WordManagement {
 
     static {
         wordList.add("ELEPHANT");
-        /*wordList.add("EMPIRE");
+        wordList.add("EMPIRE");
         wordList.add("TEA");
         wordList.add("RHINOCEROS");
         wordList.add("BRAIN");
@@ -23,10 +23,11 @@ class WordManagement {
         wordList.add("WITCHCRAFT");
         wordList.add("WHOMEVER");
         wordList.add("YACHTSMAN");
-        wordList.add(("ZOMBIE"));*/
+        wordList.add(("ZOMBIE"));
     }
 
     protected static String getRandomWord(){
+        System.out.println(wordList.size());
         return (String) getWordList().get(randomiser.nextInt(wordList.size()));
     }
 

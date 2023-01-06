@@ -8,7 +8,7 @@ class UserManagement {
     protected String getInput(){
         //System.out.println("Please make your guess!");
 
-        Pattern pattern = Pattern.compile("^[A-Za-z]$");
+        //Pattern pattern = Pattern.compile("^[A-Za-z]$");
 
         if(scanner.hasNext()){
             String guess = scanner.next();
