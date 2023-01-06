@@ -31,10 +31,20 @@ class WordManagement {
         return (String) getWordList().get(randomiser.nextInt(wordList.size()));
     }
 
-    protected static List convertWordToArrayList(String word){
+    /* ***
+
+
+    convertWordToArrayList was initially created for something, but there was no need for it, therefore now it's private.
+
+
+     *** */
+
+    private static List convertWordToArrayList(String word){
         List toReturn = new ArrayList<>(Arrays.asList(word.split("")));
         return toReturn;
     }
+
+
 
     private static List getWordList(){
         return wordList;
