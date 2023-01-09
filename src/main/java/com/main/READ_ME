@@ -15,5 +15,5 @@ Extra:
     when it comes to manipulating objects and can be reworked easily to different types of lists such as LinkedList in the event that that is needed).
     For more information on the difference between the two declarations: https://www.javatpoint.com/list-vs-arraylist-in-java#:~:text=The%20List%20is%20an%20interface%2C%20and%20the%20ArrayList%20is%20a,expand%20the%20array%20when%20needed
 *The loop to play again was done in the Main class as that will make it more reusable than having it run multiple times by default.
-*Proper encapsulation was done for the majority of the project: only hangman can be accessed and only its run method can be called from outside of the hangman project.
+*Proper encapsulation was done for the majority of the project: only hangman can be accessed and only its run method can be called from outside of the hangman package.
 
