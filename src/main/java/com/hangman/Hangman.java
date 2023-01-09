@@ -50,7 +50,7 @@ public class Hangman {
     }
 
     private String checkGuessCorrectness (String guess){
-        String result = "";
+        String result;
         boolean guessedCorrectly = false;
         for(int i = 0; i<lettersGuessed.size(); i++){
             if(lettersGuessed.get(i).equals(guess.toUpperCase())){

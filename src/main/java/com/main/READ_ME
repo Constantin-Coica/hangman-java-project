@@ -1,2 +1,19 @@
 ### HANGAMAN GAME PROJECT ###
 
+The task of this project is to create a game based on hangman using the Java Basics (Class creation, method implementation and
+the use of static).
+The way the project was conceived was as such:
+1. A WordManagement class that has static variables which is used to store the potential words for use guessing. This class' methods and variables
+were made to be static because the class only holds data and gives it when necessary, instantiating would have no value.
+2. A UserManagement class that uses a scanner to get the input from the user, validate it and return it.
+3. A Display class that that prints out to the console different information that the user must know (rules, current lives they have, letters guesseed,
+the hangman drawing). Each method takes different information that's going to be used when making the String to display.
+4. The Hangman class which brings everything together in order to create the functionality for the game itself.
+
+Extra:
+*ArrayLists and HashMaps implement the List, Map interfaces respectively. There are multiple benefits for declaring them like this (they are quicker
+    when it comes to manipulating objects and can be reworked easily to different types of lists such as LinkedList in the event that that is needed).
+    For more information on the difference between the two declarations: https://www.javatpoint.com/list-vs-arraylist-in-java#:~:text=The%20List%20is%20an%20interface%2C%20and%20the%20ArrayList%20is%20a,expand%20the%20array%20when%20needed
+*The loop to play again was done in the Main class as that will make it more reusable than having it run multiple times by default.
+*Proper encapsulation was done for the majority of the project.
+

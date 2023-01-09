@@ -9,6 +9,14 @@ class Display {
 
     private static Map<Integer, String> map = new HashMap<>();
 
+
+    /***
+     *
+     *
+     * Credit to Adam Sackfield for the Strings themselves which were put in a HashMap which implements the Map interface.
+     *
+     * ***/
+
     static {map.put(7, "____________");
         map.put(6, " |\n |\n |\n |\n |\n |\n |\n |\n____________");
         map.put(5, "____________\n|/\n|\n|\n|\n|\n|\n|\n|\n____________");
