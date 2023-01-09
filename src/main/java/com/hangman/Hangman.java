@@ -23,6 +23,7 @@ public class Hangman {
         this.wordToGuess = WordManagement.getRandomWord();
         //System.out.println(wordToGuess); <- UNCOMMENT THIS FOR DEBUGGING PURPOSES
         addUnderScores(this.wordToGuess);
+        display.displayHangMan(getCurrentLives());
         display.displayWordToGuess(currentWord);
         display.displayLettersGuessed(lettersGuessed);
         while(getStatus().equals("start") || getStatus().equals("next")){
@@ -32,6 +33,7 @@ public class Hangman {
             String correctness = checkGuessCorrectness(getUserGuess());
             display.displayGuessOutcome(correctness);
             setStatus(checkWinOrFail(correctness));
+            display.displayHangMan(getCurrentLives());
             display.displayWordToGuess(currentWord);
             display.displayLettersGuessed(lettersGuessed);
         }

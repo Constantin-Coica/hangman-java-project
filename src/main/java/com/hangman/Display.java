@@ -1,9 +1,23 @@
 package com.hangman;
 
 import java.util.Arrays;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 class Display {
+
+    private static Map<Integer, String> map = new HashMap<>();
+
+    static {map.put(7, "____________");
+        map.put(6, " |\n |\n |\n |\n |\n |\n |\n |\n____________");
+        map.put(5, "____________\n|/\n|\n|\n|\n|\n|\n|\n|\n____________");
+        map.put(4, "____________\n|          |\n|\n|\n|\n|\n|\n|\n____________");
+        map.put(3, "____________\n|          |\n|         (_)\n|\n|\n|\n|\n|\n____________");
+        map.put(2, "____________\n|          |\n|         (_)\n|          |\n|          |\n|          |\n|\n|\n|\n____________");
+        map.put(1, "____________\n|          |\n|         (_)\n|         \\|/\n|          |\n|          |\n|\n|\n|\n____________");
+        map.put(0, "____________\n|          |\n|         (_)\n|         \\|/\n|          |\n|          |\n|         / \\ \n|\n|\n____________");}
+
     protected void displayStartMessage(int numberOfLives){
         System.out.println("Welcome to the Hangman game!\nRules: \n1. You have " + numberOfLives + " lives.\n" +
                 "2. Every correct guess will bring you a step closer to guessing the correct word.\n" +
@@ -14,8 +28,19 @@ class Display {
                 "7. Only single letters are allowed! (No words or numbers allowed!)");
     }
 
+
     protected void displayLives(int numberOfLives){
         System.out.println("LIVES: " + numberOfLives);
+    }
+
+    protected void displayHangMan(int numberOfLives){
+        if(numberOfLives>0){
+            System.out.println(map.get(numberOfLives - 1));
+        } else {
+            System.out.println(map.get(0));
+        }
+
+
     }
 
     protected void displayLettersGuessed (List lettersGuessed){

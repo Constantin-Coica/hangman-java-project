@@ -27,7 +27,6 @@ class WordManagement {
     }
 
     protected static String getRandomWord(){
-        System.out.println(wordList.size());
         return (String) getWordList().get(randomiser.nextInt(wordList.size()));
     }
 
